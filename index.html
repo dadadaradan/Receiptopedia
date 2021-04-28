@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reciptopedia</title>
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="SitePoint" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/index.css" />
+
+    <script type="module" defer src="src/controler.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <div class="header__logo--container">
+            <a href="https://ecstatic-saha-0d6596.netlify.app"
+              ><svg class="header__logo--icon">
+                <use
+                  xlink:href="src/img/symbol-defs.svg#icon-spoon-knife"
+                ></use></svg
+            ></a>
+          </div>
+          <h2 class="header__heading">Receiptopedia</h2>
+        </div>
+        <form action="" class="header__search">
+          <input
+            type="text"
+            class="header__search--input"
+            placeholder="What whould you prefer ?"
+          />
+          <button class="header__search--btn">
+            <svg class="header__search--icon">
+              <use xlink:href="src/img/symbol-defs.svg#icon-search"></use>
+            </svg>
+            Search
+          </button>
+        </form>
+        <nav class="header__navigation">
+          <ul class="header__list">
+            <li class="header__list-item">
+              <button class="header__nav-btn">
+                <span class="header__nav--span">
+                  <svg class="header__nav--icon header__nav--icon-a">
+                    <use
+                      xlink:href="src/img/symbol-defs.svg#icon-bookmarks"
+                    ></use>
+                  </svg>
+                </span>
+                <h4 class="header__nav-title">Favourites</h4>
+              </button>
+              <div class="favourites">
+                <ul class="favourites__list">
+                  <div>
+                    <p class="recipe__welcome-paragraph">
+                      <svg class="recipe__icon">
+                        <use
+                          xlink:href="./src/img/symbol-defs.svg#icon-warning"
+                        ></use>
+                      </svg>
+                      No Favourites yet, find a recipe that you like and
+                      bookmark it :)
+                    </p>
+                  </div>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="section__wrapper">
+        <section class="section__results">
+          <ul class="results"></ul>
+          <div class="pagination"></div>
+        </section>
+        <section class="section__recipe">
+          <p class="recipe__welcome-paragraph">
+            <svg class="recipe__icon">
+              <use xlink:href="src/img/symbol-defs.svg#icon-smile"></use>
+            </svg>
+            Start by searching for a meal or an ingredient. Have fun !
+          </p>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
